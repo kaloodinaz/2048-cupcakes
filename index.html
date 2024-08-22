@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <title>2048 Cupcakes | Play Online Cupcake 2048 Game</title>
   <meta name="description" content="Play 2048 Cupcakes, the fun and addictive version of the classic 2048 game with delicious cupcake tiles. Perfect for puzzle lovers and dessert enthusiasts!">
   <link href="style/main.css" rel="stylesheet" type="text/css">
@@ -13,11 +12,33 @@
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+ <style>
+.navbar{background-color:#333;border-radius:5px;overflow:hidden}
+.navbar .navbar-header{float:left}
+.navbar .nav{list-style:none;margin:0;padding:0;overflow:hidden}
+.navbar .nav li{float:left}
+.navbar .nav li a{display:block;color:#fff;text-align:center;padding:7px 10px;text-decoration:none;transition:background-color .3s}
+.navbar .nav li a:hover{background-color:#575757}
+.navbar .nav li.active a{background-color:#575757}
+.container-fluid{max-width:1200px;margin:0 auto;padding:0 15px}
+@media (max-width: 768px) {
+.navbar .nav{float:none;clear:both;text-align:center}
+.navbar .nav li{float:none;display:inline-block}
+.navbar .nav li a{display:inline-block;padding:5px 10px;font-size:16px}
+}
+.navbar .menu-btn{display:none;background-color:#333;color:#fff;padding:7px 10px;text-align:center;border:none;cursor:pointer;font-size:16px}
+@media (max-width: 768px) {
+.navbar .menu-btn{display:block}
+}
+.navbar .nav-responsive{display:none}
+@media (max-width: 768px) {
+.navbar .nav-responsive{display:block;text-align:center}
+.navbar .nav-responsive li{display:block;float:none}
+}
+</style>
 </head>
 <body>
   <nav class="navbar navbar-default">
@@ -142,7 +163,6 @@
     <p>© Copyright By 2048 cupcake game</p>
   </div>
   <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script defer src="js/bind_polyfill.js"></script>
   <script defer src="js/classlist_polyfill.js"></script>
   <script defer src="js/animframe_polyfill.js"></script>
