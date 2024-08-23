@@ -53,14 +53,14 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #FF0066;
+  background: #A80044;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
   font-weight: bold;
   border-radius: 3px;
-  color: #ebebeb;
+  color: #FFFFFF;
   margin-top: 8px;
   text-align: center; }
   .score-container:after, .best-container:after {
@@ -101,7 +101,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #FF0066;
+  color: #A80044;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
